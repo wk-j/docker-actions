@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/docker/cli@master
         with:
-          args: "build -t ."
+          args: "build -t wk/my-web ."
