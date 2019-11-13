@@ -1,4 +1,4 @@
-name: build
+name: .NET
 on: [push]
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
         with:
           image: wearetherock/my-web
           tag: latest
-          # registry: registry-url.io
+          registry: docker.io
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USER}}
           password: ${{ secrets.DOCKER_PASSWORD }}
