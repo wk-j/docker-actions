@@ -11,7 +11,7 @@ jobs:
       - uses: mr-smithers-excellent/docker-build-push@v1.0
         with:
           image: wearetherock/my-web
-          tag: latest
+          # tag: latest
           registry: docker.io
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USER}}
